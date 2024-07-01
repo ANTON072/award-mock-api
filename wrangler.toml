@@ -105,3 +105,12 @@ compatibility_date = "2024-06-20"
 # [[vectorize]]
 # binding = "MY_INDEX"
 # index_name = "my-index"
+
+# KV Namespacesの設定
+[[kv_namespaces]]
+binding = "PUBLIC_JWK_CACHE_KV"   # コード内でのバインディング名
+id = "e7830637c4bf43b7955d2c24ff294785"       # 作成したKV NamespaceのID
+
+# 環境変数の設定
+[vars]
+PUBLIC_JWK_CACHE_KEY = "firebase-public-jwk"  # 公開鍵をキャッシュするためのキー名
